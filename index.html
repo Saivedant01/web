@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tata Steel - Global Steel Manufacturing Leader</title>
+    <meta name="description" content="Explore Tata Steel's products, sustainability initiatives, and global presence as a leading steel manufacturer since 1907.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: #003366;
+            --secondary: #cc0000;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-image {
+            background: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7));
+        }
+        .btn-primary {
+            background-color: var(--primary);
+        }
+        .btn-secondary {
+            background-color: var(--secondary);
+        }
+        .stat-card {
+            transition: transform 0.3s;
+        }
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold">
+                <span class="text-white">TATA</span>
+                <span class="text-red-500">STEEL</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="" class="hover:text-red-400 transition" onclick="scrollToTop()">Home</a>
+                <a href="#about" class="hover:text-red-400 transition">About</a>
+                <a href="#products" class="hover:text-red-400 transition">Products</a>
+                <a href="#sustainability" class="hover:text-red-400 transition">Sustainability</a>
+                <a href="#contact" class="hover:text-red-400 transition">Contact</a>
+                <a href="#" id="login-btn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition">Login</a>
+            </div>
+            <button class="md:hidden focus:outline-none" id="menu-btn">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700" onclick="scrollToTop()">Home</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">About</a>
+                <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Products</a>
+                <a href="#sustainability" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Sustainability</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium hover:bg-gray-700">Contact</a>
+                <a href="#" class="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white hover:bg-blue-700">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-image relative h-screen flex items-center justify-center">
+        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3f302be7-5014-4217-9e83-8ce96f936533.png" alt="Modern steel manufacturing facility at dawn with glowing furnaces and large steel structures" class="absolute inset-0 w-full h-full object-cover z-0"/>
+        <div class="absolute inset-0 bg-black opacity-50 z-1"></div>
+        <div class="relative z-10 text-center px-4 text-white max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">World's Most Diversified Steel Producer</h1>
+            <p class="text-xl md:text-2xl mb-8">Innovating steel solutions across 26 countries since 1907</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#about" class="btn-primary py-3 px-6 rounded-lg text-white font-medium">Explore More</a>
+                <a href="#contact" class="btn-secondary py-3 px-6 rounded-lg text-white font-medium">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">About Tata Steel</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b79d97b5-a65d-4087-bad0-7feb6450bad5.png" alt="Historic black and white photo of Tata Steel's first steel plant with workers in front of blast furnaces" class="rounded-lg shadow-xl"/>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Our Legacy</h3>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Founded in 1907, Tata Steel is among the top global steel companies with an annual crude steel capacity of 34 million tonnes per annum. We are the world's most geographically diversified steel producer, with operations in 26 countries and commercial presence in over 50 countries.
+                    </p>
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-800">Our Vision</h3>
+                    <p class="text-lg text-gray-600">
+                        To be the global steel industry benchmark for value creation and corporate citizenship through the excellence of our people, our innovative approach and our overall conduct.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="stat-card bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">34</div>
+                    <div class="text-gray-600 text-lg">Million Tonnes Capacity</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">26</div>
+                    <div class="text-gray-600 text-lg">Countries of Operation</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">65,000</div>
+                    <div class="text-gray-600 text-lg">Employees Worldwide</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">1907</div>
+                    <div class="text-gray-600 text-lg">Year Founded</div>
+                </div>
+                <div class="stat-card bg-white p-6 rounded-lg shadow text-center">
+                    <div class="text-4xl font-bold text-blue-800 mb-2">50+</div>
+                    <div class="text-gray-600 text-lg">Countries Served</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Our Products</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a3093a87-4025-49b5-aefd-01d09122f58a.png" alt="High-quality steel coils shining under factory lights with protective wrapping" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Flat Products</h3>
+                        <p class="text-gray-600 mb-4">Hot rolled, cold rolled, galvanised, and tin mill products for automotive, appliances, and construction.</p>
+                        <div class="text-blue-700 font-medium mb-4">
+                            <p>₹55,000 - ₹65,000 per tonne</p>
+                            <p class="text-sm text-gray-500">Prices vary by thickness & coating</p>
+                        </div>
+                        <button class="w-full btn-primary py-2 px-4 rounded-lg text-white font-medium hover:bg-blue-800 transition product-quote-btn" data-product="Flat Products">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8ea19d8f-19a4-4b36-9b17-04e4d247a25f.png" alt="Structural steel beams and columns arranged in a warehouse ready for shipping" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Long Products</h3>
+                        <p class="text-gray-600 mb-4">Wires, rods, bars, and structural sections for infrastructure and industrial applications.</p>
+                        <div class="text-blue-700 font-medium mb-4">
+                            <p>₹45,000 - ₹60,000 per tonne</p>
+                            <p class="text-sm text-gray-500">Volume discounts available</p>
+                        </div>
+                        <button class="w-full btn-primary py-2 px-4 rounded-lg text-white font-medium hover:bg-blue-800 transition product-quote-btn" data-product="Long Products">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/214d596b-6336-4aba-9bb0-2653ccd59def.png" alt="Precision-cut steel tubes and pipes of various diameters on a production line" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800">Tubes</h3>
+                        <p class="text-gray-600 mb-4">High-quality ERW and seamless tubes for energy, construction, and mechanical applications.</p>
+                        <div class="text-blue-700 font-medium mb-4">
+                            <p>₹65,000 - ₹80,000 per tonne</p>  
+                            <p class="text-sm text-gray-500">Diameter and grade dependent</p>
+                        </div>
+                        <button class="w-full btn-primary py-2 px-4 rounded-lg text-white font-medium hover:bg-blue-800 transition product-quote-btn" data-product="Tubes">
+                            Request Quote
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Section -->
+    <section id="sustainability" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Sustainable Steelmaking</h2>
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1bc68afb-4f10-4d99-bf29-6f3a2bbac25c.png" alt="Modern steel plant with solar panels in foreground and green energy infrastructure" class="rounded-lg shadow-xl"/>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-4">Our Commitment</h3>
+                    <p class="text-lg text-gray-300 mb-6">
+                        Tata Steel is committed to reducing its carbon footprint and has set ambitious targets to achieve net-zero carbon emissions by 2045. Our sustainability initiatives include water conservation, renewable energy adoption, and circular economy practices.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-green-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">50% reduction in CO2 emissions by 2030 (Scope 1 & 2)</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-green-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">Water positive company since 2020</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-green-400 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-gray-300">Zero effluent discharge at all production sites</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w25xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-gray-800">Contact Us</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Our Offices</h3>
+                    <div class="space-y-4 text-gray-600">
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Tata Centre, 43 Jawaharlal Nehru Road, Kolkata - 700071, India</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>+91 (33) 2248 9600</span>
+                        </div>
+                        <div class="flex items-start">
+                            <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <span>corporate.communications@tatasteel.com</span>
+                        </div>
+                        <div class="flex items-start mt-6">
+                            <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Tata Steel Works, Jamshedpur - 831001, Jharkhand, India</span>
+                        </div>
+                        <div class="flex items-start mt-4">
+                            <svg class="h-6 w-6 text-red-500 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <span>+91 (657) 243 2121</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Global Locations</h3>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/048c9bfa-a092-4bae-82f8-51c1528728b6.png" alt="World map showing Tata Steel operations locations across continents with markers" class="rounded-lg shadow"/>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-semibold mb-6 text-gray-800">Send Us a Message</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-1">Full Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="subject" class="block text-gray-700 mb-1">Subject</label>
+                                <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-1">Message</label>
+                                <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary py-3 px-6 rounded-lg text-white font-medium w-full">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Tata Steel</h3>
+                    <p class="text-gray-400">Pioneering steelmaking innovation and excellence since 1907.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">Products</a></li>
+                        <li><a href="#sustainability" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Investors</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">News</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Media</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.667.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 Tata Steel Limited | CRISIL AAA Rated Company</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-btn').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Purchase quote modal
+        function showQuoteModal(product) {
+            const quoteModal = document.createElement('div');
+            quoteModal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            quoteModal.innerHTML = `
+                <div class="bg-white p-8 rounded-lg w-full max-w-md">
+                    <h3 class="text-2xl font-bold mb-6">Purchase Request for ${product}</h3>
+                    <form id="quote-form">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Quantity (tonnes)</label>
+                            <input type="number" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Delivery Location</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Company Name</label>
+                            <input type="text" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Contact Email</label>
+                            <input type="email" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Phone Number</label>
+                            <input type="tel" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Additional Requirements</label>
+                            <textarea class="w-full px-4 py-2 border rounded" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                            Submit Purchase Request
+                        </button>
+                    </form>
+                    <button id="quote-cancel-btn" 
+                        class="mt-4 text-gray-500 hover:text-gray-700">
+                        Cancel
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(quoteModal);
+            
+            document.getElementById('quote-form').addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Purchase request submitted successfully! Our sales team will contact you within 24 hours with pricing and availability.');
+                document.body.removeChild(quoteModal);
+            });
+
+            document.getElementById('quote-cancel-btn').addEventListener('click', function() {
+                document.body.removeChild(quoteModal);
+            });
+        }
+
+        // Add event listeners to quote buttons
+        document.querySelectorAll('.product-quote-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                showQuoteModal(this.dataset.product);
+            });
+        });
+
+        // MySQL Connection (you would need to implement this in your backend server file)
+        /* 
+        const mysql = require('mysql2');
+        const pool = mysql.createPool({
+            host: 'localhost',
+            user: 'your_username', 
+            password: 'your_password',
+            database: 'tata_steel',
+            waitForConnections: true,
+            connectionLimit: 10,
+            queueLimit: 0
+        });
+
+        // Login API Endpoint (server-side)
+        app.post('/login', async (req, res) => {
+            const { email, password } = req.body;
+            
+            try {
+                const [rows] = await pool.promise().query(
+                    'SELECT * FROM users WHERE email = ? AND password = ?',
+                    [email, password]
+                );
+                
+                if (rows.length > 0) {
+                    res.json({ success: true, user: rows[0] });
+                } else {
+                    res.status(401).json({ success: false, message: 'Invalid credentials' });
+                }
+            } catch (error) {
+                console.error('Database error:', error);
+                res.status(500).json({ success: false, message: 'Server error' });
+            }
+        });
+        */
+
+        // Registration modal
+        function showRegisterModal() {
+            const registerModal = document.createElement('div');
+            registerModal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+            registerModal.innerHTML = `
+                <div class="bg-white p-8 rounded-lg w-full max-w-md">
+                    <h3 class="text-2xl font-bold mb-6">Create Account</h3>
+                    <form id="register-form" action="/register" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Full Name</label>
+                            <input type="text" name="name" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input type="email" name="email" class="w-full px-4 py-2 border rounded" required>
+                        </div>
+                        <div class="mb-4 relative">
+                            <label class="block text-gray-700 mb-2">Password</label>
+                            <div class="relative">
+                                <input type="password" id="register-password" class="w-full px-4 py-2 border rounded" required>
+                                <button type="button" onclick="togglePassword('register-password', this)" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                                    Show
+                                </button>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                            Register
+                        </button>
+                    </form>
+                    <button id="register-cancel-btn" 
+                        class="mt-4 text-gray-500 hover:text-gray-700">
+                        Cancel
+                    </button>
+                </div>
+            `;
+            document.body.appendChild(registerModal);
+            
+            document.getElementById('register-cancel-btn').addEventListener('click', function() {
+                document.body.removeChild(registerModal);
+            });
+
+            document.getElementById('register-form').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const formData = new FormData(this);
+                
+                try {
+                    const response = await fetch('/register', {
+                        method: 'POST',
+                        body: JSON.stringify(Object.fromEntries(formData)),
+                        headers: {
+                            'Content-Type': 'application/json'
+                        }
+                    });
+                    
+                    const result = await response.json();
+                    
+                    if (response.ok) {
+                        alert('Registration successful! Please login.');
+                        document.body.removeChild(registerModal);
+                        document.body.removeChild(loginModal);
+                        loginModal = null;
+                    } else {
+                        alert(result.message || 'Registration failed');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('An error occurred during registration');
+                }
+            });
+        }
+
+        // Login modal
+        const loginBtn = document.getElementById('login-btn');
+        let loginModal = null;
+        
+        loginBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (!loginModal) {
+                loginModal = document.createElement('div');
+                loginModal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+                loginModal.innerHTML = `
+                    <div class="bg-white p-8 rounded-lg w-full max-w-md">
+                        <h3 class="text-2xl font-bold mb-6">Tata Steel Login</h3>
+                        <form id="login-form" action="/login" method="POST">
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" name="email" class="w-full px-4 py-2 border rounded" required>
+                            </div>
+                            <div class="mb-6 relative">
+                                <label class="block text-gray-700 mb-2">Password</label>
+                                <div class="relative">
+                                    <input type="password" id="login-password" class="w-full px-4 py-2 border rounded" required>
+                                    <button type="button" onclick="togglePassword('login-password', this)" class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700">
+                                        Show
+                                    </button>
+                                </div>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                                Login
+                            </button>
+                        </form>
+                        <button onclick="document.body.removeChild(loginModal); loginModal = null;" 
+                            class="mt-4 text-gray-500 hover:text-gray-700">
+                            Cancel
+                        </button>
+                        <div class="mt-4 text-center">
+                            <p class="text-sm text-gray-600">Don't have an account? <button id="show-register-btn" class="text-blue-600 hover:text-blue-800">Register here</button></p>
+                        </div>
+                    </div>
+                `;
+                document.body.appendChild(loginModal);
+                
+                document.getElementById('show-register-btn').addEventListener('click', function() {
+                    document.body.removeChild(loginModal);
+                    showRegisterModal();
+                });
+
+                document.getElementById('login-form').addEventListener('submit', async function(e) {
+                    e.preventDefault();
+                    const formData = new FormData(this);
+                    
+                    try {
+                        const response = await fetch('/login', {
+                            method: 'POST',
+                            body: JSON.stringify(Object.fromEntries(formData)),
+                            headers: {
+                                'Content-Type': 'application/json'
+                            }
+                        });
+                        
+                        const result = await response.json();
+                        
+                        if (response.ok) {
+                            alert('Login successful!');
+                            // Redirect to dashboard or reload page
+                            window.location.href = '/dashboard';
+                        } else {
+                            alert(result.message || 'Login failed');
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        alert('An error occurred during login');
+                    } finally {
+                        document.body.removeChild(loginModal);
+                        loginModal = null;
+                    }
+                });
+            }
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message. We will get back to you soon.');
+            this.reset();
+        });
+
+        // Password visibility toggle
+        function togglePassword(inputId, button) {
+            const passwordInput = document.getElementById(inputId);
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            button.textContent = type === 'password' ? 'Show' : 'Hide';
+        }
+
+        // Scroll to top function for Home button
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
